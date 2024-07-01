@@ -1,0 +1,82 @@
+body{
+    height: 0;
+    width: 0;
+    background-image: url(informatica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#intro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1000;
+    background: rgba(172, 144, 144, 0.589);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+#intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#intro p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+#intro .actions {
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-family: 'Times New Roman';
+    text-align: center;
+    padding: 1.3em 3em;
+  font-size: 16px;
+  margin: 10px;
+  text-transform: uppercase;
+  Letter-spacing: 12px;
+  font-weight: 800;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 05;
+  cursor: pointer;
+  outline: none;
+} 
+
+#b1:hover {
+
+    background-color: #9214c4;
+    box-shadow: 0px 15px 20px rgb(13 252 46 / 40%);
+    color: #fff;
+    transform: translateY(-7px);
+}
+    
+#b2:hover {
+    background-color: #084272;
+    box-shadow: 0px 15px 20px rgba(6, 52, 54, 0.795);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#b3:hover {
+    background-color: #918810;
+    box-shadow: 0px 15px 20px rgba(13, 240, 252, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+/* Ocultar la pantalla de bienvenida cuando se cargue */
+body:not(.is-preload) #intro {
+    display: none;
+}
